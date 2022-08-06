@@ -52,29 +52,7 @@ final class CoreGraphicsRenderer: UIView, TurtleGraphicsRenderer {
             } else {
                 context.addLine(to: segment.point)
             }
-        }
-
-//        var lineWidth: CGFloat?
-//        var lastPoint: CGPoint?
-//
-//        history.forEach { state in
-//            if state.thickness != lineWidth {
-//                if !context.isPathEmpty {
-//                    context.strokePath()
-//                }
-//                lineWidth = state.thickness
-//                context.setLineWidth(state.thickness)
-//                context.move(to: state.position)
-//            }
-//            if lastPoint != state.position {
-//                if state.penDown {
-//                    context.addLine(to: state.position)
-//                } else {
-//                    context.move(to: state.position)
-//                }
-//                lastPoint = state.position
-//            }
-//        }
+        }        
         if !context.isPathEmpty {
             context.strokePath()
         }
